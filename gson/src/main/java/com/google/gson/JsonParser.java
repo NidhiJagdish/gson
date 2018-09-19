@@ -60,6 +60,65 @@ public final class JsonParser {
       if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
         throw new JsonSyntaxException("Did not consume the entire document.");
       }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      return element;
+    } catch (MalformedJsonException e) {
+      throw new JsonSyntaxException(e);
+    } catch (IOException e) {
+      throw new JsonIOException(e);
+    } catch (NumberFormatException e) {
+      throw new JsonSyntaxException(e);
+    }
+  }
+  
+    public JsonElement parseDuplicate(Reader json) throws JsonIOException, JsonSyntaxException {
+    try {
+      JsonReader jsonReader = new JsonReader(json);
+      JsonElement element = parse(jsonReader);
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
+      if (!element.isJsonNull() && jsonReader.peek() != JsonToken.END_DOCUMENT) {
+        throw new JsonSyntaxException("Did not consume the entire document.");
+      }
       return element;
     } catch (MalformedJsonException e) {
       throw new JsonSyntaxException(e);
